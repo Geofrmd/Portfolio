@@ -1,0 +1,11 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Modifier le nombre de colonnes selon vos besoins */
+  gap: 16px; /* Modifier l'espacement entre les vidéos selon vos besoins */
+}
+
+.grid-item {
+  padding: 16px; /* Modifier la marge intérieure des vidéos selon vos besoins */
+}
+
+
