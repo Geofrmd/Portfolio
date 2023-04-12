@@ -8,4 +8,50 @@
   padding: 16px; /* Modifier la marge intérieure des vidéos selon vos besoins */
 }
 
+#phrase {
+  font-size: 45px;
+  font-weight: 600;
+  color: #333;
+}
 
+
+.boost {
+  font-size: 30px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #333;
+}
+
+.main-description {
+  padding-top: 10%;
+}
+// #motChangeant {
+//   animation: changementMots 2s linear infinite;
+// }
+
+// @keyframes changementMots {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+.illustration {
+  background-color: #323232;
+}
+
+.illustration > iframe {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#motChangeant {
+  background-color: #1eff92;
+  color: #333;
+}
