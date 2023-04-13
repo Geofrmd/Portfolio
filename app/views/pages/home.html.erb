@@ -1,4 +1,9 @@
- <div class="section-1" style="height:80vh">
+<div class="sidebar">
+  <a href="https://www.facebook.com/monprofil" target="_blank"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.twitter.com/monprofil" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/monprofil" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+<div class="section-1" style="padding-top:72px">
   <div class="container py-4">
     <div class="row">
       <div class="main-description col">
@@ -154,9 +159,74 @@
    </div>
   </div>
 </div>
+<div class="section-2">
+  <div class="container py-4">
+    <div class="row">
+     <div class="col">
+      <i class="fa-solid fa-lightbulb-on"></i>
+      <h2>Production</h2>
+      <p></p>
+     </div>
+     <div class="col">
+      <i class="fa-solid fa-lightbulb-on"></i>
+      <h2>Réalisation</h2>
+      <p></p>
+     </div>
+     <div class="col">
+      <i class="fa-solid fa-lightbulb-on"></i>
+      <h2>Post-Production</h2>
+      <p></p>
+     </div>
+    </div>
+  </div>
+</div>
 
-<%# <div class="container">
-  <div class="references">
+<div class="section-3">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col">
+        <div>
+          <h2>Qui suis-je ?</h2>
+          <p>Moi c'est Geoffroy, j'ai 26 ans et je suis passionné d'images et plus particulièrement de photographie et de vidéos depuis de longues années. </p>
+          <p>J'ai commencé ma carrière professionnelle dans l'entreprise Nexity, dans la partie Entreprise du groupe. J'ai pu avoir l'opportunité de les accompagner sur de nombreux sujets de réalisation, production et montage vidéo, et ainsi de monter en compétences lors de mes 3 années 1/2. Cette experience m'a permis d'approfondir et de continuer de me former dans ce domaine. Cela m'ammène aujourd'hui à proposer mes services en tant que Freelance. Je serait heureux de discuter avec vous de vos projets. Vous pouvez me contacter ici , et retrouvez moi sur mes réseaux sociaux :</p>
+          <ul>
+            <ul><a href="lien1"><img src="logo1.png" alt="Logo 1"></a></ul>
+            <ul><a href="lien1"><img src="logo1.png" alt="Logo 1"></a></ul>
+          </ul>
+          <a class="btn btn-primary" href="">Contactez Moi</a>
+        </div>
+      </div>
+      <div class="col">
+        <div >
+          <img class="imggeo" src="https://res.cloudinary.com/dwclozjta/image/upload/v1681386961/P7403594_nc3hwv.jpg" alt="image cool de moi">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-4">
+  <div class="container">
+    <div class="grid">
+      <div class="left">
+        <h1>Ils me font confiance</h1>
+        <p>Voici la liste des entreprises avec lesquelles j'ai déjà été ammené à collaborer !</p>
+      </div>
+      <div class="right">
+        <div class="logo-grid">
+          <img src="https://media.licdn.com/dms/image/C4E0BAQEhEK7T3l22cA/company-logo_200_200/0/1672735285667?e=2147483647&v=beta&t=UwpCJPZDnizRnK5XZSpADRZ9tSrDkXSEO9XjUvjJFxQ" alt="Logo 1">
+          <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/7/7e/Nexity-logo.svg/2048px-Nexity-logo.svg.png" alt="Logo 2">
+          <img src="https://www.globalespacesverts.fr/wp-content/uploads/2018/12/Observatoire.jpg" alt="logo observatoire de paris" alt="Logo 3">
+          <img src="https://yt3.googleusercontent.com/ytc/AL5GRJWA_aTvhpQ5amn9pYXqarkZjMxaBOPpRp1BfR6JAQ=s900-c-k-c0x00ffffff-no-rj" alt="Logo 4">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="references">
+  <div class="container">
+    <h2>Quelques références</h2>
     <div class="grid-container">
       <div class="grid-item">
         <iframe width="100%" height="auto" src="https://www.youtube.com/embed/1XEBuWQUpsQ" title="Présentation New - Nexity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -196,8 +266,14 @@
       </div>
     </div>
   </div>
-</div> %>
+</div>
 
+<div class="contact">
+  <%# <%= form_for(@things) do |f| %>
+
+  <%# <% end %>
+
+</div>
 
 <script type="text/javascript">
 
@@ -216,4 +292,24 @@
   // Appel de la fonction toutes les deux secondes
   setInterval(changerMot, 2000);
 
+</script>
+
+<script>
+  var topNavbar = document.querySelector('.navbar-lewagon'); // Sélecteur de la barre de navigation supérieure
+  var prevScrollY = window.scrollY; // Position de défilement précédente
+
+// Écouter l'événement de défilement de la fenêtre
+  window.addEventListener('scroll', function() {
+  var currentScrollY = window.scrollY; // Position de défilement actuelle
+  var scrollDirection = currentScrollY > prevScrollY ? 'down' : 'up'; // Direction de défilement
+
+  // Animer la barre de navigation supérieure en fonction de la direction de défilement
+  if (scrollDirection === 'down') {
+    topNavbar.style.top = '-100px'; // Masquer la barre de navigation en dehors de l'écran
+  } else {
+    topNavbar.style.top = '0'; // Afficher la barre de navigation
+  }
+
+  prevScrollY = currentScrollY; // Mettre à jour la position de défilement précédente
+});
 </script>

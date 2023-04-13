@@ -2,7 +2,13 @@
   justify-content: space-between;
   background: white;
   height: 72px;
+  position: fixed;
+  top: 0; /* Masquer la barre de navigation en dehors de l'écran */
+  left: 0;
+  right: 0;
+  transition: top 0.3s ease-in-out; /* Animation de transition pour une apparition en douceur */
 }
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
