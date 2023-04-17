@@ -368,7 +368,6 @@
   </div>
 </div>
 
-
 <!-- Code HTML pour le pop-up -->
 <div id="video-popup" class="video-popup">
   <div class="video-popup-content">
@@ -376,6 +375,20 @@
     <iframe src="" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
+
+<%= simple_form_for @contact do |f| %>
+  <%= f.input :name, label: 'Nom complet' %>
+
+  <%= f.input :email, label: 'Email' %>
+
+  <%= f.input :entreprise, label: 'Entreprise' %>
+
+  <%= f.input :phone, label: 'Numéro de téléphone' %>
+
+  <%= f.input :message, label: 'Votre message :' %>
+
+  <%= f.button :submit, 'Envoyer' %>
+<% end %>
 
 <script class="pop-up-js">
   // Sélectionner tous les éléments avec la classe .video-link
