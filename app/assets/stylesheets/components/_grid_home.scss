@@ -208,12 +208,12 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
 .portfolio-item:hover .portfolio-overlay {
-  opacity: 1;
+  opacity: 0;
 }
 
 .portfolio-title,
@@ -234,4 +234,96 @@
   font-weight: 300;
   padding-top: 10px;
   color: #333;
+}
+
+////
+
+.video-teaser {
+  width: 640px;
+  aspect-ratio: auto 640 / 360;
+  height: 360px;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 768px) {
+  .video-teaser {
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .video-teaser {
+      width: 330px;
+      aspect-ratio: auto 640 / 360;
+      height: 250px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .video-teaser {
+    width: 640px;
+    height: 360px;
+    aspect-ratio: auto 16 / 9;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .video-tesaer {
+    width: 640px;
+    aspect-ratio: auto 640 / 360;
+    height: 360px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .illustration {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-1 {
+    background-image: url("https://res.cloudinary.com/dwclozjta/image/upload/v1681386961/P7403594_nc3hwv.jpg");
+    background-size: cover;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .navbar {
+    position: initial;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .main-cta {
+    font-size: 25px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .boost {
+    font-size: 20px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .main-description {
+    padding-top: 8%;
+  }
 }

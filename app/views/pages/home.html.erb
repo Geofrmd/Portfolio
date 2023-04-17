@@ -14,10 +14,10 @@
         <a class="btn btn-primary main-cta" href="">Je découvre!</a>
       </div>
       <div class="illustration col">
-        <%= video_tag(cloudinary_url("https://res.cloudinary.com/dwclozjta/video/upload/v1681493740/teaser_videaste_Comp-_lie%CC%81e_01_1_hgma1z.mp4"), controls: false, autoplay: true, muted: true, loop: true, width: "640", height: "360", class: "iframe") %>
+        <%= video_tag(cloudinary_url("https://res.cloudinary.com/dwclozjta/video/upload/v1681493740/teaser_videaste_Comp-_lie%CC%81e_01_1_hgma1z.mp4"), controls: false, autoplay: true, muted: true, loop: true, width: "640", height: "360", class: "iframe video-teaser") %>
         <div class="img">
           <?xml version="1.0" encoding="utf-8"?>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="ill-premier" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 2841.47 894.04" style="enable-background:new 0 0 2841.47 894.04;" xml:space="preserve">
                     <style type="text/css">
             .st0{fill:none;stroke:#B1B1B1;stroke-width:4;stroke-miterlimit:10;}
@@ -372,7 +372,7 @@
 <!-- Code HTML pour le pop-up -->
 <div id="video-popup" class="video-popup">
   <div class="video-popup-content">
-    <span class="close-btn">&times;</span>
+    <span style="color:white" class="close-btn">&times;</span>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
   </div>
 </div>
