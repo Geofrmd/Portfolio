@@ -94,7 +94,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :user_name => 'apikey',
-    :password => ENV['SENDGRID_API_KEY'],
+    :password => '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',
     :domain => 'geoffroy-moreaud.com',
     :address => 'smtp.sendgrid.net',
     :port => 587,
