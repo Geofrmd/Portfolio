@@ -367,6 +367,38 @@
     </div>
   </div>
 </div>
+<div class="container">
+  <div class="text-center">
+    <form onsubmit="sendEmail(); reset(); return false;">
+      <h3>ME CONTACTER</h3>
+      <p>Une question? Une demande de devis? Contactez-moi pour en savoir plus !</p>
+      <input type="text" id="name" placeholder="Nom complet" required>
+      <input type="email" id="email" placeholder="Votre mail" required>
+      <input type="text" id="société" placeholder="Société">
+      <input type="text" id="phone" placeholder="Téléphone">
+      <textarea id="message" rows="4" placeholder="Comment puis je vous aider ?" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+         Email.send({
+            SecureToken: "2061d55c-574e-462d-a208-0efab8181872"
+            To : 'g.moreaud@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Demande de renseignements",
+            Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Société: " + document.getElementById("société").value
+                + "<br> Téléphone N°: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
+        }).then(
+          message => alert(message)
+        );
+    }
+  </script>
+</div>
 
 <!-- Code HTML pour le pop-up -->
 <div id="video-popup" class="video-popup">
