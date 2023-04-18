@@ -97,7 +97,7 @@ Rails.application.configure do
     :password => ENV['SENDGRID_API_KEY'],
     :domain => 'geoffroy-moreaud.com',
     :address => 'smtp.sendgrid.net',
-    :port => 465,
+    :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
   }
