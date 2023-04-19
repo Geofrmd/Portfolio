@@ -1,8 +1,8 @@
 <div class="sidebar">
-  <a href="https://www.instagram.com/monprofil" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="" target="_blank"><i class="fab fa-github"></i></a>
-  <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="https://www.instagram.com/geof_mrd/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/geoffroy-moreaud" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Geofrmd" target="_blank"><i class="fab fa-github"></i></a>
+  <a href="https://www.youtube.com/channel/UCmugbcMoTsGYkg1joCZjK1g" target="_blank"><i class="fab fa-youtube"></i></a>
 </div>
 <a id="scrollToTopBtn" title="Retour en haut de page"><i class="fa-solid fa-circle-up"></i></a>
 <div class="section-1" style="padding-top:72px">
@@ -11,7 +11,7 @@
       <div class="main-description col">
         <h1 id="phrase">Réalisation de clips vidéos <br> pour vos <span id="motChangeant">événements</span></h1>
         <p class="boost">Boostez votre visibilité !</p>
-        <a class="btn btn-primary main-cta" href="">Je découvre!</a>
+        <a class="btn btn-primary main-cta" href="#anchor">Je découvre!</a>
       </div>
       <div class="illustration col">
         <%= video_tag(cloudinary_url("https://res.cloudinary.com/dwclozjta/video/upload/v1681493740/teaser_videaste_Comp-_lie%CC%81e_01_1_hgma1z.mp4"), controls: false, autoplay: true, muted: true, loop: true, width: "640", height: "360", class: "iframe video-teaser") %>
@@ -167,12 +167,12 @@
      <div class="col text-center">
       <span><i class="fa-regular fa-lightbulb skill"></i></span>
       <h2 class="skill-description">Production</h2>
-      <p style="font-size: 14px;">Réflexion avant le tournage de la tournure que prendra votre vidéo toussa toussa</p>
+      <p >Réflexion avant le tournage pour donner vie à vos idées !</p>
      </div>
-     <div class="col text-center">
+     <div class="col text-center" >
       <span><i class="fa-solid fa-video skill"></i></span>
       <h2 class="skill-description">Réalisation</h2>
-      <p style="font-size: 14px;">Je me déplace pour tourner, avec du materile de qualité bb</p>
+      <p >Création complète de votre vidéo en respectant le concept que vous avez défini pour que la vidéo vous ressemble !</p>
      </div>
      <div class="col text-center">
       <span>
@@ -181,21 +181,21 @@
         </span>
       </span>
       <h2 class="skill-description">Post-Production</h2>
-      <p style="font-size: 14px;">Maitrisant la suite Adobe incluant les logiciels tels que Premier Pro, After Effect, Photoshop ..., cela me permet une polyvalence et de vous proposer une vidéo à votre image !</p>
+      <p>Maitrise de la suite Adobe (Premier Pro, After Effect, Photoshop ...), me permettant une polyvalence et vous proposer une vidéo à votre image !</p>
      </div>
     </div>
   </div>
 </div>
 
-<div class="section-3">
+<div class="section-3" id="anchor">
   <div class="container py-5">
     <div class="row">
       <div class="col">
         <div>
           <h2>Qui suis-je ?</h2>
-          <p style="font-weight: 300; padding-top: 2%;">Moi c'est Geoffroy, j'ai 26 ans et je suis passionné d'images et plus particulièrement de photographie et de vidéos depuis de longues années. </p>
-          <p style="font-weight: 300;">J'ai commencé ma carrière professionnelle dans l'entreprise Nexity, dans la partie Entreprise du groupe. J'ai pu avoir l'opportunité de les accompagner sur de nombreux sujets de réalisation, production et montage vidéo, et ainsi de monter en compétences lors de mes 3 années 1/2. Cette experience m'a permis d'approfondir et de continuer de me former dans ce domaine. Cela m'ammène aujourd'hui à proposer mes services en tant que Freelance. Je serait heureux de discuter avec vous de vos projets. Vous pouvez me contacter ici , et retrouvez moi sur mes réseaux sociaux :</p>
-          <a class="btn btn-outline-primary" href="">Contactez Moi</a>
+          <p style="font-weight: 300; padding-top: 2%;">Je m'appelle Geoffroy, j'ai 26 ans et je suis passionné par la photographie et la vidéo depuis de nombreuses années. </p>
+          <p style="font-weight: 300;">J'ai commencé ma carrière professionnelle chez Nexity, où j'ai eu l'opportunité de travailler dans la partie Entreprise du groupe. Pendant mes 3 années et demie là-bas, j'ai acquis de l'expérience en réalisation, production et montage vidéo, ce qui m'a permis d'améliorer mes compétences dans ce domaine. Fort de cette expérience, je me lance maintenant en tant que freelance et je serais ravi de discuter avec vous de vos projets. Vous pouvez me contacter ici : </p>
+          <%= link_to "Contactez Moi !", new_contact_path, class: "btn btn-primary", style: "color: white; font-weight: bold;" %>
         </div>
       </div>
       <div class="col">
@@ -212,7 +212,7 @@
     <div class="grid">
       <div class="left">
         <h1 style="font-size: 2rem;">Ils me font confiance</h1>
-        <p style="font-weight: 300; padding-top: 35px;">Retrouvez ici une liste non exhaustive des entreprises avec lesquelles j'ai déjà été ammené à collaborer !</p>
+        <p style="font-weight: 300; padding-top: 35px;">Retrouvez ici une liste non exhaustive des entreprises avec lesquelles j'ai déjà été ammené à collaborer ! <br> A votre tour ?</p>
       </div>
       <div class="right">
         <div class="logo-grid">
@@ -242,6 +242,7 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Présentation New</h3>
+          <p class="category"> - CORPORATE - </p>
           <p class="portfolio-description">Mise en valeur du nouveau siège social de Nexity. Présentation des locaux, interviews...</p>
         </div>
       </div>
@@ -251,6 +252,7 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Visite du campus Wenov - Hiptown</h3>
+          <p class="category"> - CORPORATE - </p>
           <p class="portfolio-description">Présentation du campus Wenov, exploité par la société Hiptown</p>
         </div>
       </div>
@@ -276,7 +278,8 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Hiptown Invalides - Assemblée Nationale</h3>
-          <p class="portfolio-description">Mise en valeur du nouveau siège social de Nexity. Présentation des locaux, interviews...</p>
+          <p class="category"> - CORPORATE - </p>
+          <p class="portfolio-description">Mise en valeur du nouvel espace de Coworking "Hiptown Invalides". Présentation des locaux, interviews...</p>
         </div>
       </div>
     </div>
@@ -284,8 +287,9 @@
     <div class="portfolio-grid">
       <div class="portfolio-item">
         <div class="portfolio-text">
-          <h3 class="portfolio-title">Hiptown Pont de Sèvres - Centre de coworking</h3>
-          <p class="portfolio-description">description</p>
+          <h3 class="portfolio-title">Hiptown Pont de Sèvres</h3>
+          <p class="category"> - CORPORATE - </p>
+          <p class="portfolio-description">Mise en valeur du nouvel espace de Coworking "Hiptown Pont de Sèvres". Présentation des locaux, interviews...</p>
         </div>
       </div>
       <div class="portfolio-item">
@@ -310,7 +314,8 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Hiptown EuroRennes - Coworking</h3>
-          <p class="portfolio-description">Description</p>
+          <p class="category"> - CORPORATE - </p>
+          <p class="portfolio-description">Mise en valeur du nouvel espace de Coworking "Hiptown EuroRennes". Présentation des locaux, interviews...</p>
         </div>
       </div>
     </div>
@@ -319,7 +324,8 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Nexity x Week'in - Event</h3>
-          <p class="portfolio-description">description</p>
+          <p class="category"> - EVENT - </p>
+          <p class="portfolio-description">Retour en image d'un event organisé par la société Week'In</p>
         </div>
       </div>
       <div class="portfolio-item">
@@ -344,7 +350,8 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Ouverture Restaurant Marta - Afterwork</h3>
-          <p class="portfolio-description">description</p>
+          <p class="category"> - EVENT - </p>
+          <p class="portfolio-description">Retour en image sur la soirée d'innauguration du restaurant "Marta", à Lille</p>
         </div>
       </div>
     </div>
@@ -353,7 +360,8 @@
       <div class="portfolio-item">
         <div class="portfolio-text">
           <h3 class="portfolio-title">Présentation - FlexAccess</h3>
-          <p class="portfolio-description">description</p>
+          <p class="category"> - PRODUIT - </p>
+          <p class="portfolio-description">Proposition d'une publicité pour le lancement du produit FlexAccess</p>
         </div>
       </div>
       <div class="portfolio-item">
@@ -366,6 +374,8 @@
       </div>
     </div>
   </div>
+</div>
+<div class="separateur">
 </div>
 <!-- Code HTML pour le pop-up -->
 <div id="video-popup" class="video-popup">

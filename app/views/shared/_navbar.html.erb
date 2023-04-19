@@ -1,22 +1,26 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" data-controller="navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="https://res.cloudinary.com/dwclozjta/image/upload/v1681306242/logo-test-1_q51zp4.png" />
-    </a>
+    <%= link_to root_path do %>
+       <%= image_tag "https://res.cloudinary.com/dwclozjta/image/upload/v1681916461/logo_site_otiuja.png", alt: "Logo de mon site", style: "width:60px;" %>
+    <% end %>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Messages</a>
+            <%= link_to "Contact", new_contact_path, class: "nav-link contact-button"%>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
+          <% if user_signed_in? %>
+            <li class="nav-item dropdown">
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://res.cloudinary.com/dwclozjta/image/upload/v1681912229/image_profil_linkedin_rzi7ac.png" />
+              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <%= link_to "Messages", dashboard_path, class: "dropdown-item" %>
+                <%= link_to "Se déconnecter", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+              </div>
+            <% end %>
+          </li>
       </ul>
     </div>
   </div>

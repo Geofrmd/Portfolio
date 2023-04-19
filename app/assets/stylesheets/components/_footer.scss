@@ -20,7 +20,7 @@
 }
 .footer-links a:hover {
   opacity: 1;
-  color: #1dff92;
+  color: #c16e4b;
   transition: opacity 0.5s ease-in-out;
 }
 
@@ -28,6 +28,11 @@
   background: #FBF7F0;
   height: 150px;
   padding: 0px 40px;
+  font-size: 0.8rem;
+}
+
+.footer-copyright {
+  font-size: 0.8rem;
 }
 
 .seperateur {

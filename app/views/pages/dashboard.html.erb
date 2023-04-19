@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="py-4">
+    <div class="text-center">
+      <h1>This the futur dashboard with all information concerning the messages</h1>
+    </div>
+  </div>
+</div>
+
+<h1>Tableau de bord</h1>
+
+<!-- Affiche la liste des nouveaux formulaires de contact -->
+<ul>
+  <% @new_contacts.each do |contact| %>
+    <li>
+      <strong>Nom :</strong> <%= contact.name %><br>
+      <strong>Entreprise :</strong> <%= contact.entreprise %><br>
+      <strong>Email :</strong> <%= contact.email %><br>
+      <strong>Téléphone :</strong> <%= contact.phone %><br>
+      <strong>Message :</strong> <%= contact.message %>
+    </li>
+  <% end %>
+</ul>

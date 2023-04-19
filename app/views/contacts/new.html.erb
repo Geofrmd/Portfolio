@@ -1,19 +1,16 @@
-<div class="container">
-  <h1>Contact Form</h1>
-  <p>Une question? Une demande de devis? Contactez-moi pour en savoir plus !</p>
-  <%= form_for @contact do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
-
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%></br>
-
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+<div class="section-form" style="padding-top: 80px">
+  <div class="container-form container py-4" >
+    <div class="header form">
+      <h1 class="text-center">Une question, une demande de devis... ? </h1>
+      <p class="text-center">N'hésitez pas à me contacter, je vous répondrai dès que possible ! À très vite.</p>
+      <%= simple_form_for @contact, url: contacts_path do |f| %>
+        <%= f.input :name, label: "Nom" %>
+        <%= f.input :entreprise, label: "Entreprise" %>
+        <%= f.input :email, label: "Email" %>
+        <%= f.input :phone, label: "Téléphone" %>
+        <%= f.input :message, label: "Message", as: :text %>
+        <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>
