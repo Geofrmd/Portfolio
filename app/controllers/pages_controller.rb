@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, only: [:dashboard]
   before_action :check_admin, only: :dashboard
 
   def home
