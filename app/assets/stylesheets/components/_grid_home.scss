@@ -14,12 +14,20 @@
   color: #333;
 }
 
+#trust {
+  font-weight: 300;
+  padding-top: 35px;
+}
 
 .boost {
   font-weight: 300;
   padding-top: 5%;
   padding-bottom: 5%;
   color: #333;
+}
+
+.main-cta:hover {
+  color: white;
 }
 
 .main-description {
@@ -309,16 +317,98 @@
 }
 
 @media (min-width: 100px) and (max-width: 768px) {
+  .boost {
+    color: white;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  #phrase {
+    color: white;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .imggeo {
+    display: none;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
   .navbar {
     position: initial;
   }
 }
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-3 h2 {
+   text-align: center;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .main-description {
+    padding-top: 0%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .skill-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-2 p  {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-3 p  {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .portfolio-title  {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .portfolio-description  {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-4 h1  {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  #trust {
+    font-size: 0.9rem;
+  }
+}
+
 
 @media (min-width: 100px) and (max-width: 1200px) {
   .sidebar {
     display: none;
   }
 }
+
 
 
 
