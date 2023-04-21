@@ -1,5 +1,5 @@
-<div class="section-form" style="padding-top: 80px">
-  <div class="container-form container py-4" >
+<div class="section-form">
+  <div class="container-form container" >
     <div class="header form">
       <h1 class="text-center">Une question, une demande de devis... ? </h1>
       <p class="text-center">N'hésitez pas à me contacter, je vous répondrai dès que possible ! À très vite.</p>
@@ -9,7 +9,7 @@
         <%= f.input :email, label: "Email" %>
         <%= f.input :phone, label: "Téléphone" %>
         <%= f.input :message, label: "Message", as: :text %>
-        <%= f.button :submit, "Envoyer", class: "btn btn-primary" %>
+        <%= f.button :submit, "Envoyer", class: "btn btn-primary", style: "color: white;" %>
       <% end %>
     </div>
   </div>

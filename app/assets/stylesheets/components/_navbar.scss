@@ -7,6 +7,7 @@
   left: 0;
   right: 0;
   transition: top 0.3s ease-in-out; /* Animation de transition pour une apparition en douceur */
+  z-index: 1;
 }
 
 
@@ -69,4 +70,16 @@
   color: #000;
   border: none;
   border-radius: 5px;
+}
+
+.container-fluid {
+  background: white;
+}
+
+@media (min-width: 100px) and (max-width: 576px) {
+  .nav-link {
+    text-align: end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

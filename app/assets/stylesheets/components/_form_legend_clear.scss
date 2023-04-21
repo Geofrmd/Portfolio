@@ -21,3 +21,27 @@ legend ~ div.form-check:first-of-type {
   font-size: 30px;
   font-weight: bold;
 }
+
+.form-control {
+  background: white;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .container-form {
+    padding: 35px;
+    background: white;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .section-form {
+    padding: 40px 40px 40px 40px;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .form h1 {
+    font-size: 25px;
+  }
+}
